@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class TaxCloud::AuthorizedService - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../index.html">Home</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/service/authorized_service.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">BaseService
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-authorized">#authorized</a>
+    
+    <li><a href="#method-i-authorized_with_capture">#authorized_with_capture</a>
+    
+    <li><a href="#method-i-captured">#captured</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../README.html">README</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../TaxCloud.html">TaxCloud</a>
+  
+    <li><a href="../TaxCloud.html">TaxCloud</a>
+  
+    <li><a href="../TaxCloud/Address.html">TaxCloud::Address</a>
+  
+    <li><a href="../TaxCloud/AuthorizedResponse.html">TaxCloud::AuthorizedResponse</a>
+  
+    <li><a href="../TaxCloud/AuthorizedService.html">TaxCloud::AuthorizedService</a>
+  
+    <li><a href="../TaxCloud/AuthorizedWithCaptureResponse.html">TaxCloud::AuthorizedWithCaptureResponse</a>
+  
+    <li><a href="../TaxCloud/BaseService.html">TaxCloud::BaseService</a>
+  
+    <li><a href="../TaxCloud/CapturedResponse.html">TaxCloud::CapturedResponse</a>
+  
+    <li><a href="../TaxCloud/CartItem.html">TaxCloud::CartItem</a>
+  
+    <li><a href="../TaxCloud/CartItemResponse.html">TaxCloud::CartItemResponse</a>
+  
+    <li><a href="../TaxCloud/CartItemsResponse.html">TaxCloud::CartItemsResponse</a>
+  
+    <li><a href="../TaxCloud/GetTICsResponse.html">TaxCloud::GetTICsResponse</a>
+  
+    <li><a href="../TaxCloud/LookupResponse.html">TaxCloud::LookupResponse</a>
+  
+    <li><a href="../TaxCloud/LookupService.html">TaxCloud::LookupService</a>
+  
+    <li><a href="../TaxCloud/MessageType.html">TaxCloud::MessageType</a>
+  
+    <li><a href="../TaxCloud/ResponseBase.html">TaxCloud::ResponseBase</a>
+  
+    <li><a href="../TaxCloud/ResponseMessage.html">TaxCloud::ResponseMessage</a>
+  
+    <li><a href="../TaxCloud/ResponseType.html">TaxCloud::ResponseType</a>
+  
+    <li><a href="../TaxCloud/ReturnedResponse.html">TaxCloud::ReturnedResponse</a>
+  
+    <li><a href="../TaxCloud/ReturnedService.html">TaxCloud::ReturnedService</a>
+  
+    <li><a href="../TaxCloud/TIC.html">TaxCloud::TIC</a>
+  
+    <li><a href="../TaxCloud/TICService.html">TaxCloud::TICService</a>
+  
+    <li><a href="../TaxCloud/VerifyAddressResult.html">TaxCloud::VerifyAddressResult</a>
+  
+    <li><a href="../TaxCloud/VerifyAddressService.html">TaxCloud::VerifyAddressService</a>
+  
+    <li><a href="../Helper.html">Helper</a>
+  
+    <li><a href="../Object.html">Object</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class TaxCloud::AuthorizedService</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-authorized" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">authorized</span><span
+            class="method-args">(api_id, api_key, customer_id, cart_id, order_id, date_authorized)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="authorized-source">
+            <pre><span class="ruby-comment"># File lib/service/authorized_service.rb, line 19</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">authorized</span>(<span class="ruby-identifier">api_id</span>, <span class="ruby-identifier">api_key</span>, <span class="ruby-identifier">customer_id</span>, <span class="ruby-identifier">cart_id</span>, <span class="ruby-identifier">order_id</span>, <span class="ruby-identifier">date_authorized</span>)
+  <span class="ruby-identifier">response</span> = <span class="ruby-identifier">client</span>.<span class="ruby-identifier">request</span> <span class="ruby-value">:authorized</span> <span class="ruby-keyword">do</span>
+    <span class="ruby-identifier">soap</span>.<span class="ruby-identifier">body</span> = {<span class="ruby-value">:apiLoginID</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">api_id</span>, <span class="ruby-value">:apiKey</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">api_key</span>,
+                 <span class="ruby-string">'customerID'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">customer_id</span>, <span class="ruby-string">'cartID'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">cart_id</span>, <span class="ruby-string">'orderID'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">order_id</span>, <span class="ruby-string">'dateAuthorized'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">date_authorized</span>}
+
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">authorized_response</span> = <span class="ruby-constant">TaxCloud</span><span class="ruby-operator">::</span><span class="ruby-constant">AuthorizedResponse</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">response</span>.<span class="ruby-identifier">to_hash</span>[<span class="ruby-value">:authorized_response</span>][<span class="ruby-value">:authorized_result</span>])
+
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- authorized-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- authorized-method -->
+
+    
+      <div id="method-i-authorized_with_capture" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">authorized_with_capture</span><span
+            class="method-args">(api_id, api_key, customer_id, cart_id, order_id, date_authorized, date_captured)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="authorized_with_capture-source">
+            <pre><span class="ruby-comment"># File lib/service/authorized_service.rb, line 9</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">authorized_with_capture</span>(<span class="ruby-identifier">api_id</span>, <span class="ruby-identifier">api_key</span>, <span class="ruby-identifier">customer_id</span>, <span class="ruby-identifier">cart_id</span>, <span class="ruby-identifier">order_id</span>, <span class="ruby-identifier">date_authorized</span>, <span class="ruby-identifier">date_captured</span>)
+  <span class="ruby-identifier">response</span> = <span class="ruby-identifier">client</span>.<span class="ruby-identifier">request</span> <span class="ruby-value">:authorized_with_capture</span> <span class="ruby-keyword">do</span>
+    <span class="ruby-identifier">soap</span>.<span class="ruby-identifier">body</span> = {<span class="ruby-value">:apiLoginID</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">api_id</span>, <span class="ruby-value">:apiKey</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">api_key</span>,
+                 <span class="ruby-string">'customerID'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">customer_id</span>, <span class="ruby-string">'cartID'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">cart_id</span>, <span class="ruby-string">'orderID'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">order_id</span>, <span class="ruby-string">'dateAuthorized'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">date_authorized</span>, <span class="ruby-string">'dateCaptured'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">date_captured</span>}
+
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">authorized_with_capture_rsp</span> = <span class="ruby-constant">TaxCloud</span><span class="ruby-operator">::</span><span class="ruby-constant">AuthorizedWithCaptureResponse</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">response</span>.<span class="ruby-identifier">to_hash</span>[<span class="ruby-value">:authorized_with_capture_response</span>][<span class="ruby-value">:authorized_with_capture_result</span>])
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- authorized_with_capture-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- authorized_with_capture-method -->
+
+    
+      <div id="method-i-captured" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">captured</span><span
+            class="method-args">(api_id, api_key, order_id)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="captured-source">
+            <pre><span class="ruby-comment"># File lib/service/authorized_service.rb, line 30</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">captured</span>(<span class="ruby-identifier">api_id</span>, <span class="ruby-identifier">api_key</span>, <span class="ruby-identifier">order_id</span>)
+  <span class="ruby-identifier">response</span> = <span class="ruby-identifier">client</span>.<span class="ruby-identifier">request</span> <span class="ruby-value">:captured</span> <span class="ruby-keyword">do</span>
+    <span class="ruby-identifier">soap</span>.<span class="ruby-identifier">body</span> = {<span class="ruby-value">:apiLoginID</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">api_id</span>, <span class="ruby-value">:apiKey</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">api_key</span>, <span class="ruby-string">'orderID'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">order_id</span>}
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">captured_response</span> = <span class="ruby-constant">TaxCloud</span><span class="ruby-operator">::</span><span class="ruby-constant">CapturedResponse</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">response</span>.<span class="ruby-identifier">to_hash</span>[<span class="ruby-value">:captured_response</span>][<span class="ruby-value">:captured_result</span>])
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- captured-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- captured-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+
