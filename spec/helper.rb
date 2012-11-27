@@ -22,14 +22,14 @@ module Helper
       @destination = TaxCloud::Address.new(:address1 => '3121 West Government Way', :address2 => 'Suite 2B', :city => 'Seattle', :state => 'WA', :zip5 => '98199')
 
       #destination = verify_address(client, destination)
-      @customer_id = 1001
+      @customer_id = 1
       @cart_id = nil
-      @order_id = 1001
+      @order_id = 1
 
       # You will have to populate these values from your TaxCloud merchant account
-      @api_id = "11E1A300"
-      @api_key = "0387AFE9-8F65-4F54-84C0-162126EFD110"
-      @usps_id = "597FEDTA4827"
+      @api_id = ""
+      @api_key = ""
+      @usps_id = ""
 
       @date_authorized = Date.today
       @date_captured = Date.today
