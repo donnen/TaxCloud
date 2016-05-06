@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.taxcloud.net/1.0/taxcloud/Returned?apiKey=YOUR%20API%20LOGINID%20HERE
+    body:
+      encoding: UTF-8
+      string: apiLoginId=YOUR%20API%20KEY%20HERE&cartItems%5B%5D%5BIndex%5D=0&cartItems%5B%5D%5BItemID%5D=1&cartItems%5B%5D%5BPrice%5D=9.99&cartItems%5B%5D%5BQty%5D=1&cartItems%5B%5D%5BTIC%5D=00000&cartItems%5B%5D%5BIndex%5D=1&cartItems%5B%5D%5BItemID%5D=1&cartItems%5B%5D%5BPrice%5D=19.99&cartItems%5B%5D%5BQty%5D=1&cartItems%5B%5D%5BTIC%5D=20010&orderID=a7c88113-4b81-436d-8780-9a6f78f23a55&returnedDate=2016-05-06
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json; charset=utf-8
+      Server:
+      - Microsoft-IIS/8.5
+      X-Aspnetmvc-Version:
+      - '4.0'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - TaxCloud
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, X-Requested-With
+      Date:
+      - Fri, 06 May 2016 22:03:28 GMT
+      Content-Length:
+      - '188'
+    body:
+      encoding: UTF-8
+      string: '{"ResponseType":0,"Messages":[{"ResponseType":0,"Message":"Cannot return
+        the entire order because some items have already been returned (OrderID :
+        a7c88113-4b81-436d-8780-9a6f78f23a55)"}]}'
+    http_version: 
+  recorded_at: Fri, 06 May 2016 22:03:50 GMT
+recorded_with: VCR 2.8.0

@@ -1,0 +1,99 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.taxcloud.net/1.0/TaxCloud/Lookup?apiKey=YOUR%20API%20LOGINID%20HERE
+    body:
+      encoding: UTF-8
+      string: '{"apiLoginID":"YOUR%20API%20KEY%20HERE","customerID":"daeccde6-7c5b-49f8-8db3-d18adca4c736","cartItems":[{"Qty":1,"Price":9.99,"TIC":"00000","ItemID":1,"Index":0},{"Qty":1,"Price":19.99,"TIC":"20010","ItemID":1,"Index":1}],"origin":{"Zip4":null,"Zip5":"06851","State":"CT","City":"Norwalk","Address2":"Third
+        Floor","Address1":"162 East Avenue"},"destination":{"Zip4":null,"Zip5":"98199","State":"WA","City":"Seattle","Address2":"Suite
+        2B","Address1":"3121 West Government Way"},"cartID":"d7dd5977-f3e0-4833-aaa8-a8cfb0edd37e","deliveredBySeller":"false"}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json; charset=utf-8
+      Server:
+      - Microsoft-IIS/8.5
+      X-Aspnetmvc-Version:
+      - '4.0'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - TaxCloud
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, X-Requested-With
+      Date:
+      - Tue, 26 Apr 2016 00:26:30 GMT
+      Content-Length:
+      - '182'
+    body:
+      encoding: UTF-8
+      string: '{"CartID":"d7dd5977-f3e0-4833-aaa8-a8cfb0edd37e","CartItemsResponse":[{"CartItemIndex":0,"TaxAmount":0.95904},{"CartItemIndex":1,"TaxAmount":1.91904}],"ResponseType":3,"Messages":[]}'
+    http_version: 
+  recorded_at: Tue, 26 Apr 2016 00:26:36 GMT
+- request:
+    method: post
+    uri: https://api.taxcloud.net/1.0/taxcloud/Authorized?apiKey=YOUR%20API%20LOGINID%20HERE
+    body:
+      encoding: UTF-8
+      string: apiLoginId=YOUR%20API%20KEY%20HERE&cartID=d7dd5977-f3e0-4833-aaa8-a8cfb0edd37e&customerID=daeccde6-7c5b-49f8-8db3-d18adca4c736&dateAuthorized=2016-04-25&orderID=ad0b7fba-0fd8-4b39-8be8-72dbbb59ee53
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json; charset=utf-8
+      Server:
+      - Microsoft-IIS/8.5
+      X-Aspnetmvc-Version:
+      - '4.0'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - TaxCloud
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, X-Requested-With
+      Date:
+      - Tue, 26 Apr 2016 00:26:30 GMT
+      Content-Length:
+      - '32'
+    body:
+      encoding: UTF-8
+      string: '{"ResponseType":3,"Messages":[]}'
+    http_version: 
+  recorded_at: Tue, 26 Apr 2016 00:26:37 GMT
+recorded_with: VCR 2.9.3
